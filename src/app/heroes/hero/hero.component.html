@@ -1,0 +1,29 @@
+<div class="temary">
+  <h3>Topics Implemented</h3>
+  <ul class="temary-items">
+    <li class="temary-item">Property Binding</li>
+    <li class="temary-item">Event Binding</li>
+    <li class="temary-item">Two Way Binding</li>
+    <li class="temary-item">Pipes</li>
+    <li class="temary-item">Comunication Between Components</li>
+    <li class="temary-item">Services and Dependency Injection</li>
+    <li class="temary-item">Retrieving Data by Http Request</li>
+    <li class="temary-item">Navigation and Routing</li>
+  </ul>
+</div>
+
+<div class="container container-modifications">
+    <div class="heroesList">
+      <!--Child Component-->
+      <app-list [heroes]="heroes">
+      </app-list>
+      <!--End of Child Component-->
+    </div>
+
+    <div class="heroesAdd">
+      <!--Child Component-->
+      <app-add [hero]="hero">
+      </app-add>
+      <!--End of Child Component-->
+    </div>
+</div>

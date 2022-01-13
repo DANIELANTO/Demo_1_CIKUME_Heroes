@@ -1,0 +1,33 @@
+    <!-- Heroes List-->
+    <h2>Heroes List</h2>
+    <table class="table" *ngIf="heroes.length; else elseBlock">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="center">Name</th>
+          <th scope="col" class="center">Power</th>
+          <th scope="col" class="center">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroes; let i = index">
+          <td *ngIf = "hero.show" class="center">{{hero.name | titlecase}}</td>
+          <td *ngIf = "hero.show" class="center">{{hero.power | number}}</td>
+          <td *ngIf = "hero.show" class="center">
+            <a [routerLink]="['/heroes',i]">
+              <img src="../../../assets/img/editar.png" class="icon-img">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #elseBlock>
+      <h2 style="padding-top: 45px; line-height: 40px; 
+                  text-align: center; font-size: 22px;">
+        Sorry, we already don't have heroes in our list...
+      </h2>
+      <h2 style="padding-top: 20px; line-height: 40px; 
+                  text-align: center; font-size: 22px;">
+        add the first one :)
+      </h2>
+    </ng-template>
+    <!--End of Heroes List -->

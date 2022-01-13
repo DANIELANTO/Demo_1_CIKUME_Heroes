@@ -1,0 +1,14 @@
+.icon-img{
+  width: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon-img:hover{
+  filter: contrast(200%);
+}
+
+.center{
+  text-align: center;
+}

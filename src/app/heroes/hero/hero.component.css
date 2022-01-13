@@ -1,0 +1,44 @@
+  
+  .container-modifications{
+    display: flex;
+  }
+  
+  .heroesList{
+    width: 50%;
+  }
+  
+  .heroesAdd{
+    width: 50%;
+    height: 360px;
+    margin: 0 20px;
+  }
+  
+  .temary {
+    position: fixed;
+    top: 100px;
+    right: -220px;
+    padding: 20px;
+    width: 250px;
+    background-color: #434A54;
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    transition-duration: 0.5s;
+  }
+
+  .temary:hover{
+    right: 0;
+  }
+
+  .temary h3 {
+    margin: 0;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .temary-items{
+    list-style: none;
+  }
+
+  .temary-item:hover{
+    color: rgb(152, 179, 255);
+  }
